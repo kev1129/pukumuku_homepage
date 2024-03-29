@@ -1,0 +1,63 @@
+<template>
+  <nuxt-link
+    :to="link"
+    class="induce"
+  >
+    <span class="induce_text">
+      <i class="fas fa-angle-right induce_icon"></i>{{ text }}
+    </span>
+  </nuxt-link>
+</template>
+
+<script>
+export default {
+  props: {
+    text: String,
+    link: String
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.induce {
+  position: relative;
+  // display: inline-block;
+  color: rgba(255, 69, 0, 1);
+  opacity: .9;
+  font-weight: bold;
+  // text-align: center;
+  // margin: 0 auto;
+  text-decoration: none;
+  margin-top: 56px;
+  .induce_text {
+    font-family: 'Sawarabi Gothic';
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    .induce_icon {
+      margin-right: 8px;
+    }
+  }
+}
+.induce:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: .5;
+}
+.induce::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 3px;
+  color: rgba(255, 69, 0, 1);
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.induce:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+</style>

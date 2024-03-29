@@ -1,0 +1,36 @@
+{
+  "name": "pukumuku",
+  "version": "1.0.0",
+  "description": "My fantabulous Nuxt.js project",
+  "author": "kev1129",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@nuxtjs/vuetify": "^0.5.5",
+    "cross-env": "^5.2.0",
+    "nuxt": "^3.11.1",
+    "nuxt-fontawesome": "^0.4.0",
+    "nuxt-webfontloader": "^1.0.0",
+    "vue-audio": "0.0.12",
+    "vue-client-only": "^2.1.0",
+    "vue-meta": "^2.4.0",
+    "vue-no-ssr": "^1.1.1",
+    "vue-router": "^3.6.5",
+    "vue2-google-maps": "^0.10.6",
+    "vuetify": "^1.5.12",
+    "vuetify-audio": "0.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^10.4.1"
+  }
+}
