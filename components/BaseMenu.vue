@@ -39,16 +39,16 @@ export default {
   .card__text {
     padding: 0;
     .card__text_title {
-      font-size: 1.3rem;
+      font-size: 1.0rem;
       font-weight: bold;
       letter-spacing: 0;
     }
     .card__text_price {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       font-weight: normal;
     }
     .card__text_price_big {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
     }
   }
 }
