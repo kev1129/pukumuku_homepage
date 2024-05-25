@@ -1,4 +1,6 @@
 import pkg from './package'
+import { defineNuxtConfig } from '@nuxt/bridge'
+
 const fs = require('fs');
 const CdJson = JSON.parse(fs.readFileSync('static/json/cds.json'));
 const MenuTopJson = JSON.parse(fs.readFileSync('static/json/menu-top.json'));
