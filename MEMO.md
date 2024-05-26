@@ -10,13 +10,19 @@
 
 ## tasks
 
-- [ ] favicon
+- [ ] favicon [ref](https://qiita.com/katu_/items/d3a49de850ac277a78de)
 - [ ] font size of menu
 
 ## How to deploy to netify
 
 * Netifyでのコマンド`npm run build`
 * distディレクトリーは`.gitignore`で隠れファイルに指定されているため、それを解除する必要がある
+
+## if you want to update contents
+
+1. update contents in `run dev`
+2. ~~ --> `git push origin master`
+3. netify automatically update (catch HEAD of the master branch)
 
 ## git (for copy)
 
