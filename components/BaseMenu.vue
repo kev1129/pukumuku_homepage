@@ -12,7 +12,7 @@
     <v-card-title class="card__text">
       <div>
         <h3 class="card__text_title">{{ breadName }}</h3>
-        <div class="card__text_price">¥<span class="card__text_price_big">{{ breadPrice }}</span></div>
+        <!-- <div class="card__text_price">¥<span class="card__text_price_big">{{ breadPrice }}</span></div> -->
       </div>
     </v-card-title>
   </v-card>
