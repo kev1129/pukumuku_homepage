@@ -80,8 +80,13 @@ export default {
   modules: [
     '@nuxtjs/vuetify',
     'nuxt-webfontloader',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-gtag'
   ],
+  'google-gtag': {
+    id: "G-0R60E7END0",
+    debug: false
+  },
 
   /*
   ** Build configuration
