@@ -24,22 +24,42 @@ export default {
   */
   site: { 
     url: 'https://pankobopukumuku.com', 
-    name: 'パン工房プクムクのHP.' 
+    name: 'パン工房プクムクのHP' 
   }, 
   head: {
-    title: pkg.name,
+    charset: 'utf-8',
+    viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+    title: 'パン工房プクムク',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'description', content: '中野区南台のパン屋さん「パン工房 プクムク」のホームページ。' },
-      { name: 'og:url', content: 'https://shinadokebukawa.com/pankouboupukumuku' },
-      { name: 'og:title', content: 'パン工房 プクムク - 中野区南台のパン屋さん' },
-      { name: 'og:description', content: '中野区南台のパン屋さん「パン工房 プクムク」のホームページ。' },
-      { name: 'og:image', content: '/favicon.png' },
-      { name: 'og:site_name', content: 'パン工房 プクムク - 中野区南台のパン屋さん' },
-      { name: 'twitter:site', content: 'パン工房 プクムク - 中野区南台のパン屋さん' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1'},
+      { name: 'description', content: 'パン工房プクムクのHP | 中野区南台のパン屋さん' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge'},
+
+      // OGP用
+      { name: 'og:title', content: 'パン工房プクムク | 中野区南台のパン屋さん' },
+      { name: 'og:description', content: 'パン工房プクムクのHP | 中野区南台のパン屋さん' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://pankobopukumuku.com' },
+      { property: 'og:image', content: 'https://https://pankobopukumuku.com/og-image.png' },
       { name: 'og:locale', content: 'ja_JP' },
+
+      // Twitterカード
+      { name: 'twitter:site', content: 'パン工房プクムクのHP | 中野区南台のパン屋さん' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'パン工房プクムクのHP' },
+      { name: 'twitter:description', content: 'パン工房プクムクのHP | 中野区南台のパン屋さん' },
+      { name: 'twitter:image', content: 'https://https://pankobopukumuku.com/og-image.png' }
     ],
+    link: [
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }, // apple home icon
+        { rel: 'manifest', href: '/site.webmanifest' }, // Android系
+    ],
+
+      
+    
     script: [
     ],
     link: [
@@ -48,7 +68,7 @@ export default {
     ],
     googleAnalytics: {
       id: 'G-0R60E7END0',
-      debug: false
+    //  debug: false
     },
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID, // Use as fallback if no runtime config is provided
@@ -57,6 +77,8 @@ export default {
       googleAnalytics: {
         id: process.env.GOOGLE_ANALYTICS_ID
       }
+
+      
     }
   },
 
