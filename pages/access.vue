@@ -11,15 +11,17 @@
                 <base-text :text="mapText1"></base-text>
                 <base-text :text="mapText2"></base-text>
                 <base-text :text="mapText3"></base-text>
+                <p class="text">・地図はこちら、 <a href="https://maps.app.goo.gl/hamaCNmd1jroe4SB8" target="_blank"> Google Map</a></p>
+                
               </v-flex>       
             </v-layout>      
-            <v-layout v-resize="onResize" align-center justify-center>
+            <!-- <v-layout v-resize="onResize" align-center justify-center>
               <v-flex xs12 sm12 md12 lg12>
                 <base-map :map-width="windowSize.x" :map-height="windowSize.y"></base-map>
               </v-flex>
-            </v-layout>
-          </div>
-          <base-title class="section_title" :title="store"></base-title>
+            </v-layout> -->
+          </div> 
+         <!-- <base-title class="section_title" :title="store"></base-title>
           <div class="infomation">
             <v-container grid-list-md>
               <v-layout align-start justify-start row wrap>
@@ -28,7 +30,7 @@
                 </v-flex>                
               </v-layout>
             </v-container>
-          </div>
+          </div> -->
         </div>
       </v-container>
     </div>
@@ -62,10 +64,10 @@ export default {
         x: 0,
         y: 0,
       },
-      map: 'MAP',
-      mapText1: '電車をご利用の方：京王線「笹塚」・丸の内線「中野富士見町」・中央線「中野駅」が最寄駅です。',
-      mapText2: 'それぞれの駅からバスをご利用いただけます。京王バス「新山小学校前」下車。',
-      mapText3: '中野富士見町、笹塚からは歩いて15分程かかります。',
+      map: 'ACCESS',
+      mapText1: '・最寄駅 ：京王線「笹塚」、丸ノ内線「中野富士見町」、中央線「中野駅」',
+      mapText2: '・バス利用：京王バス「新山小学校前」下車',
+      mapText3: '・徒歩：中野富士見町・笹塚駅からは約15分',
       store: 'STORE',
     }
   },
@@ -84,6 +86,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a {
+  color: #ec1810;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.text {
+    font-family: 'Sawarabi Gothic';
+    font-size: 1.1rem;
+    letter-spacing: 0;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
 .container {
   padding-top: 0;
 }

@@ -46,7 +46,7 @@ export default {
 				{title: 'MENU', link: 'menu'},
 				{title: 'MUSIC', link: 'music'},
 				// {title: 'NEWS', link: 'news'},
-				{title: 'INFOMATION', link: 'info'}
+				{title: 'ACCESS', link: 'access'}
 			]
 		}
 	}

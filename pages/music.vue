@@ -65,11 +65,10 @@ export default {
       articsTitle: 'PUKUMUKU ZOO',
       cdTitle: 'CD',
       artist: 'PUKUMUKU ZOO',
-      artistText1: 'PUKUMUKU ZOO / プクムクズ は中野区南台を拠点に活動しています。',
+      artistText1: 'PUKUMUKU ZOO（プクムクズ）は南台を拠点に活動しています。',
       artistText2: 'あなたの街のパン祭りに出没するかも？！',
-      artistText3: 'このページからCDの一部を視聴できます。',
       artistText3: 'Youtubeもぜ覗いてみてください。',
-      cdText: 'CDは店頭にて販売しております。※音量に注意してご視聴ください。' 
+      cdText: '' 
     }
   },
   computed: {

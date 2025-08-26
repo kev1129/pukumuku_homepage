@@ -22,6 +22,10 @@ export default {
   /*
   ** Headers of the page
   */
+  site: { 
+    url: 'https://pankobopukumuku.com', 
+    name: 'パン工房プクムクのHP.' 
+  }, 
   head: {
     title: pkg.name,
     meta: [
