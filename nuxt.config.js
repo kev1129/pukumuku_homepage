@@ -107,7 +107,7 @@ export default {
     '@nuxtjs/vuetify',
     'nuxt-webfontloader',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/google-gtag'
+    '@nuxtjs/google-gtag',
   ],
   'google-gtag': {
     id: "G-0R60E7END0",

@@ -1,5 +1,10 @@
 <template>
-  <vuetify-audio :file="file" :ended="audioFinish"></vuetify-audio>
+  <vuetify-audio 
+    :file="file" 
+    :ended="audioFinish"
+    downloadable="false"
+    >
+  </vuetify-audio>
 </template>
 
 <script>
